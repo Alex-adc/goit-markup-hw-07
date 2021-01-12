@@ -79,6 +79,7 @@
 .social-list-list {
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
 
 .social-list-link {
@@ -90,6 +91,7 @@
   border-radius: 50%;
   background-color: #fff;
   margin-bottom: 30px;
+  list-style-type: none;
 }
 
 .social-list-item:not(:last-child) {
@@ -120,6 +122,7 @@
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  list-style-type: none;
 }
 
 .about-list-item:not(:last-child) {
