@@ -40,10 +40,6 @@
   list-style-type: none;
 }
 
-.header-menu-mail:not(:last-child) {
-  margin-right: 50px;
-}
-
 .menu-list-link {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -67,10 +63,6 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contact-list-link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -78,6 +70,10 @@
 .header-menu-mail {
   display: flex;
   align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-menu-link {
@@ -103,6 +99,7 @@
   color: #757575;
   text-decoration: none;
   font-style: normal;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail-svg {
@@ -121,10 +118,6 @@
 .header-menu-link:hover .header-mail-svg,
 .header-menu-link:focus .header-mail-svg {
   fill: $accent-text-color;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-menu-link {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -41,16 +41,16 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-}
 
-.container-overlay:hover .offer-overlay,
-.container-overlay:focus .offer-overlay {
-  transform: translatey(0);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover .offer-overlay,
+  &:focus .offer-overlay {
+    transform: translatey(0);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.container-overlay .offer-overlay {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  & .offer-overlay {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .offer-overlay {
@@ -69,19 +69,16 @@
   color: $white;
 }
 
-.offer-link:hover,
-.offer-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.offer-link {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .offer-link {
   display: block;
   text-decoration: none;
   padding-bottom: 20px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
