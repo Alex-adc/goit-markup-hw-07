@@ -35,18 +35,18 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+
+  &:hover .offer-overlay,
+  &:focus-within .offer-overlay {
+    transform: translatey(0);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .container-overlay {
   width: 100%;
   position: relative;
   overflow: hidden;
-
-  &:hover .offer-overlay,
-  &:focus .offer-overlay {
-    transform: translatey(0);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   & .offer-overlay {
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);

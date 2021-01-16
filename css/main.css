@@ -794,63 +794,63 @@ body {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-1,
-.customers-list-item:focus .customers-svg-1 {
+.customers-list-link:hover .customers-svg-1,
+.customers-list-link:focus .customers-svg-1 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-1 {
+.customers-list-link .customers-svg-1 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-2,
-.customers-list-item:focus .customers-svg-2 {
+.customers-list-link:hover .customers-svg-2,
+.customers-list-link:focus .customers-svg-2 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-2 {
+.customers-list-link .customers-svg-2 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-3,
-.customers-list-item:focus .customers-svg-3 {
+.customers-list-link:hover .customers-svg-3,
+.customers-list-link:focus .customers-svg-3 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-3 {
+.customers-list-link .customers-svg-3 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-4,
-.customers-list-item:focus .customers-svg-4 {
+.customers-list-link:hover .customers-svg-4,
+.customers-list-link:focus .customers-svg-4 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-4 {
+.customers-list-link .customers-svg-4 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-5,
-.customers-list-item:focus .customers-svg-5 {
+.customers-list-link:hover .customers-svg-5,
+.customers-list-link:focus .customers-svg-5 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-5 {
+.customers-list-link .customers-svg-5 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item:hover .customers-svg-6,
-.customers-list-item:focus .customers-svg-6 {
+.customers-list-link:hover .customers-svg-6,
+.customers-list-link:focus .customers-svg-6 {
   fill: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-item .customers-svg-6 {
+.customers-list-link .customers-svg-6 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -874,6 +874,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.contact-list-item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
 .contact-list-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -881,10 +885,6 @@ body {
 
 .address {
   padding-top: 20px;
-}
-
-.contact-list:not(:last-child) {
-  padding-bottom: 9px;
 }
 
 .geo-link {
@@ -930,25 +930,11 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.social-icons-link-dark:hover .social-icons-svg-footer,
-.social-icons-link-dark:focus .social-icons-svg-footer {
-  fill: #ffffff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons-link-dark .social-icons-svg-footer {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-icons-item:hover .social-icons-link-dark,
-.social-icons-item:focus .social-icons-link-dark {
-  background: #2196f3;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-icons-item .social-icons-link-dark {
+.social-icons-link-dark:hover, .social-icons-link-dark:focus {
+  background-color: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -966,7 +952,7 @@ body {
 }
 
 .subscribe {
-  padding-left: 93px;
+  padding-left: 97px;
 }
 
 .subscribe-title {
@@ -1127,16 +1113,16 @@ body {
   margin-bottom: 30px;
 }
 
+.offer-item:hover .offer-overlay,
+.offer-item:focus-within .offer-overlay {
+  transform: translatey(0);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container-overlay {
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-.container-overlay:hover .offer-overlay,
-.container-overlay:focus .offer-overlay {
-  transform: translatey(0);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-overlay .offer-overlay {
